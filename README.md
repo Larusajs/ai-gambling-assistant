@@ -1,45 +1,40 @@
 
-# Proje Başlığı
+# AI Gambling Assistant
 
-Bu projenin ne yaptığı ve kimin için olduğu hakkında kısa bir açıklama
+A brief explanation of what this project does and who it is for
 
+## Environment Variables
 
-## Ortam Değişkenleri
-
-Bu projeyi çalıştırmak için aşağıdaki ortam değişkenlerini .env dosyanıza eklemeniz gerekecek
+To run this project you will need to add the following environment variables to your .env file
 
 `OPENAI_API_KEY`
 
   
-## Bilgisayarınızda Çalıştırın
+## Run on Your Computer
 
-Projeyi klonlayın
+Clone the project
 
 ```bash
   git clone https://github.com/Larusajs/ai-gambling-assistant.git
 ```
 
-Proje dizinine gidin
+Go to the project directory
 
 ```bash
   cd ai-gambling-assistant
 ```
 
-Gerekli paketleri yükleyin
+Install necessary packages
 
 ```bash
   npm install
 ```
 
-Sunucuyu çalıştırın
+Start the server
 
 ```bash
   npm run dev
 ```
-
-## Rozetler
-
-[shields.io](https://shields.io/) Gibi bir yerden rozetler ekleyin.
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
