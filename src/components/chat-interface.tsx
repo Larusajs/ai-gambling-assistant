@@ -20,7 +20,10 @@ export default function ChatInterface() {
 
   useEffect(() => {
     if (scrollAreaRef.current) {
-      scrollAreaRef.current.scrollTop = scrollAreaRef.current.scrollHeight
+      scrollAreaRef.current.scrollTo({
+        top: scrollAreaRef.current.scrollHeight,
+        behavior: 'smooth'
+      });
     }
   }, [messages])
 
@@ -49,7 +52,10 @@ export default function ChatInterface() {
       <div className="flex flex-col h-screen">
         <Navbar />
         <main className="flex-grow flex flex-col bg-background overflow-hidden">
-          <div className="flex-grow overflow-auto px-4 py-6" ref={scrollAreaRef}>
+          <div 
+            className="flex-grow overflow-auto px-4 py-6 scroll-smooth" 
+            ref={scrollAreaRef}
+          >
             <div className="max-w-6xl mx-auto">
               <AnimatePresence initial={false}>
                 {messages.map((message) => (
